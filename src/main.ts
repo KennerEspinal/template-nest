@@ -8,6 +8,8 @@ async function bootstrap() {
 
   const logger = new Logger('App');
 
+  app.setGlobalPrefix('api/v1');
+
   const config = new DocumentBuilder()
     .setTitle('RESTFull API with NestJS')
     .setDescription('The RESTFull API documentation with NestJS')
